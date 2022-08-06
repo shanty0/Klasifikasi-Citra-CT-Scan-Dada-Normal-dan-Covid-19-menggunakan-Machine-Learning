@@ -47,4 +47,4 @@ Validation loss menunjukan kinerja model dalam menghasilkan prediksi pada label 
 Training accuracy mengkomparasi hasil prediksi model dengan label data training dalam persentase.
 Validation accuracy mengkomparasi hasil prediksi model dengan label data validasi dalam persentase.
 
-Validation loss secara konsisten lebih rendah dari training loss, jarak diantaranya kurang lebih tetap sama sepanjang iterasi. Training loss berfluktuasi.
+Validation loss secara konsisten lebih rendah dari training loss, jarak diantaranya kurang lebih tetap sama sepanjang iterasi. Validation loss berfluktuasi.
