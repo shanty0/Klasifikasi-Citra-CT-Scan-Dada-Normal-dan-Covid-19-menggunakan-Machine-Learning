@@ -20,8 +20,6 @@ kemudian menormalisasi nilai pixel untuk mempercepat komputasi. Non-linearitas d
 max pooling. Dengan mengambil setiap nilai maximum dari patch yang digeser di feature map, max pooling mengurangi dimensi feature map dan membuat representasi yang invariant
 terhadap perubahan kecil pada gambar (membuat feature spasial lebih compact).  
 
-![image](https://user-images.githubusercontent.com/110709194/183260442-500a7ea1-1dfa-410e-8681-716f9aff8f4f.png)
-
 ### Classification
 Hasil matrix 3 dimensi dari max pooling di flattened menjadi vektor 1 dimensi. Vektor ini kemudian menjadi input ke fully connected neural network dimana setiap neuron 
 terkoneksi dengan neuron di layer berikutnya. Activation function yang digunakan adalah ReLu yang performanya lebih baik dan mempercepat training. Dengan weighted 
