@@ -24,9 +24,7 @@ terhadap perubahan kecil pada gambar (membuat feature spasial lebih compact).
 Hasil matrix 3 dimensi dari max pooling di flattened menjadi vektor 1 dimensi. Vektor ini kemudian menjadi input ke fully connected neural network dimana setiap neuron 
 terkoneksi dengan neuron di layer berikutnya. Activation function yang digunakan adalah ReLu yang performanya lebih baik dan mempercepat training. Dengan weighted 
 feature, model berusaha memprediksi hasil klasfikasi. Hasil prediksi kemudian dibandingkan dengan label training data. Model pada saat itu kemudian dijalankan pada 
-validation data set. Error dari hasil prediksi training tersebut direpresentasikan dengan loss function (used function : Binary crossentropy). Untuk membuat hasil loss function sekecil mungkin, 
-weights diubah dalam besaran tertentu(learning rate) agar hasil loss function menurun (used algorithm :Adam) dengan backpropogation. Learning rate ditentukan secara 
-adaptif terhadap training data menggunakan algoritma optimisasi Adam, sehingga komputasi lebih efisien namun tetap efektif. Hal ini dilakukan secara iteratif hingga hasil loss function minimum.
+validation data set. Error dari hasil prediksi training tersebut direpresentasikan dengan loss function (used function : Binary crossentropy). Untuk membuat hasil loss function sekecil mungkin, weights diubah dengan step size/learning rate tertentu kearah dimana hasil loss function lebih rendah (used algorithm :Adam) dan diterapkan ke model dengan backpropogation. Learning rate ditentukan secara adaptif terhadap training data menggunakan algoritma optimisasi Adam, sehingga komputasi lebih efisien namun tetap efektif. Hal inidilakukan secara iteratif hingga hasil loss function minimum.
 
 ### Architecture
 Citra input dengan ukuran (240,240,3) dimasukan pada layer berikut :
